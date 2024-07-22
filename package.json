@@ -1,0 +1,20 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "A simple calculator app like you have in your android mobiles.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhuramMirza/Calculator.git"
+  },
+  "author": "Khuram Mirza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhuramMirza/Calculator/issues"
+  },
+  "homepage": "https://github.com/KhuramMirza/Calculator#readme"
+}

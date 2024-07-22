@@ -1,0 +1,170 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.9;
+    background-color: #232323;
+}
+
+h2 {
+    font-size: 2.4rem;
+    /*margin-bottom: 1.5rem;*/
+    color: #f3f3f3;
+}
+
+span {
+    color: #f3f3f3;
+    font-size: 1.6rem;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none; /* This won't be animated */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Make sure the elements that will use .hidden have default styles set */
+.container, .history-container, .history-list {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50rem !important;
+    height: 60rem !important;
+    background-color: #343434;
+    border-radius: 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn, .operators {
+    background-color: #575757;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 10rem !important;
+    height: 5rem !important;
+}
+
+.btn:hover, .operators:hover {
+    background-color: #464646;
+}
+
+/* Display */
+.display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2rem;
+    margin-bottom: 2.4rem;
+    border-radius: 2rem;
+    border: 1px solid;
+    border-bottom-color: #575757;
+}
+
+.inputs, .current-calculation {
+    margin-bottom: 1.6rem;
+    height: 5rem;
+}
+
+/* History */
+.history {
+    align-self: flex-start;
+    background-color: #343434;
+}
+
+.btn-history {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    /*transition: all 0.3s;*/
+}
+
+.buttons-container {
+    border: none !important;
+
+}
+
+
+.history-container {
+    left: 3%;
+    height: 35rem;
+    width: 35rem;
+    border-radius: 2rem;
+    position: fixed;
+    background-color: #696969;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.history-list {
+    padding: 2.4rem;
+    height: 30rem;
+    overflow-y: scroll;
+}
+
+.history-list::-webkit-scrollbar {
+    width: 0.7rem;
+
+}
+
+.history-list::-webkit-scrollbar-thumb {
+    background-color: #575757;
+    border-radius: 1rem;
+}
+
+.btn__del-history {
+    width: 100%;
+    background: #575757;
+    height: 5rem;
+    border: none !important;
+    border-radius: 1rem !important;
+    color: #f3f3f3;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.btn__del-history:hover {
+    background-color: #464646;
+}
+
+.history-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 1.6rem;
+    border: 0.15rem solid #696969;
+    border-bottom-color: #575757;
+}
